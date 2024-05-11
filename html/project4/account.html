@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Island+Moments&family=Karla&family=Montserrat&family=Pacifico&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+  <header>
+    <nav>
+      <ul>
+        <li><a id="homeButton" href="#">Home</a></li>
+        <li><a id="workButton" href="#">Work</a></li>
+        <li><a id="contactButton" href="#">Contact</a></li>
+        <li><a id="logoutButton" href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="about-me">
+      <img src="./images/me.jpg" alt="myPicture">
+      <article>
+        <h2>About Me</h2>
+        <p>I am a web developer with a passion for creating beautiful and functional websites. I have expertise in HTML, CSS, JavaScript, and various web development frameworks. With my skills and experience, I strive to deliver exceptional user experiences and build innovative web solutions.</p>
+      </article>
+    </div>
+  </header>
+
+  
+
+
+
+
+  <main>
+    <section>
+      <h1 class="titleAccount">Welcome!</h1>
+      <button class="dropdown-btn" onclick="dropDown()">Show Personal Information</button>
+      <article id="personalInfo" style="display: none;">
+        <h2>Personal Information</h2>
+        <p>Name: Roberta Cavallaro</p>
+        <p>Email: roberta@gmail.com</p>
+        <p>Membership Level: Premium</p>
+        <p>Account Created: January 1, 2023</p>
+      </article>
+    </section>
+  </main>
+</div>
+  <footer>
+    <p>&copy; 2023 Roberta Cavallaro. All rights reserved.</p>
+  </footer>
+
+<script>
+    // Logout function
+    function logoutButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'index.html'; // Redirect to the login page
+    }
+
+    // Add event listener to the logout button
+    const logoutButtonElement = document.getElementById('logoutButton');
+    logoutButtonElement.addEventListener('click', logoutButton);
+
+
+
+
+    
+      // HOME function
+      function homeButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'account.html'; // Redirect to the home page
+    }
+
+    // Add event listener to the home button
+    const homeButtonElement = document.getElementById('homeButton');
+    homeButtonElement.addEventListener('click', homeButton);
+
+
+
+
+
+    // WORK function
+    function workButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'work.html'; // Redirect to the work page
+    }
+
+    // Add event listener to the work button
+    const workButtonElement = document.getElementById('workButton');
+    workButtonElement.addEventListener('click', workButton);
+
+
+
+   // CONTACT function
+       function contactButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'contact.html'; // Redirect to the contact page
+    }
+
+    // Add event listener to the settings button
+    const contactButtonElement = document.getElementById('contactButton');
+    contactButtonElement.addEventListener('click', contactButton);
+
+
+
+    // dropdown button personal information function
+    function dropDown() {
+      var dropdownContent = document.getElementById("personalInfo");
+      if (dropdownContent.style.display === "none") {
+        dropdownContent.style.display = "block";
+      } else {
+        dropdownContent.style.display = "none";
+      }
+    } 
+</script>
+</body>
+</html>

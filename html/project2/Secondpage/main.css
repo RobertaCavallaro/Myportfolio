@@ -1,0 +1,13 @@
+h1 {
+  color: red;
+}
+
+.bi-star-fill {
+  color: purple;
+}
+
+.btn-outline-dark:hover {
+  color: #ddf7aa;
+  background-color: rgba(12, 69, 82, 0.8392156863);
+  border-color: #08d23b;
+}/*# sourceMappingURL=main.css.map */

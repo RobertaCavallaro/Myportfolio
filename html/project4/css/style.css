@@ -1,0 +1,316 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://coolbackgrounds.io/images/unsplash/josh-bean-medium-9501ba9f.jpg'); 
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+header {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px; /* Add margin bottom for additional space */
+}
+.wrapper {
+  flex: 1;
+}
+#personalInfo {
+  display: none;
+  margin-top: 10px;
+}
+
+/* about me style */
+.about-me-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+.about-me img {
+  width: 200px;
+  height: 272px;
+  border-radius: 33%;
+  margin-bottom: 11px;
+}
+
+
+
+/* NAVIGATION BAR STYLE */
+header {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color:black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+
+nav ul li a:hover {
+  background-color: #7ac70d;
+}
+
+
+/* MAIN SECTION STYLE */
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+footer {
+ background-color: #CCCCFF;
+      padding: 4px 0 ;
+      color: black;
+      text-align: center;
+}
+.titleAccount {
+text-align-last: center;}
+
+
+/* DROPDOWN MENU STYLE */
+.dropdown-content {
+  display: none;
+}
+
+/* Style for the dropdown button */
+.dropdown-btn {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: -webkit-fill-available;
+
+}
+
+
+
+/* ABOUT ME STYLE */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+h2{
+  text-align: center;
+}
+
+.about-me img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  text-align: center;
+}
+
+
+
+/* WORK IMAGES STYLE */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  
+}
+
+
+.project-gallery img:hover {
+  transform: scale(2.0);
+}
+.title {
+  color: #333;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+
+}
+
+
+ /* Media query for mobile screens */
+ @media (max-width: 767px) {
+  .project-gallery img{
+    transition: none; /* Remove transition effect for mobile screens */
+  }
+}
+
+
+
+/* CONTACT FORM STYLE */
+
+.contact-section {
+  padding: 40px;
+  border: solid 2px;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  background-color:#CCCCFF ;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #FF4785;
+}
+
+
+
+/* LOGIN FORM STYLE */
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-container .pure-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-container .pure-form input[type="text"],
+.login-container .pure-form input[type="email"],
+.login-container .pure-form input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container .pure-form input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+.login-container .pure-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container .pure-form button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+

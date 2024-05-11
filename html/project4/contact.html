@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<div class="wrapper">
+  <header>
+    <nav>
+      <ul>
+        <li><a id="homeButton" href="#">Home</a></li>
+        <li><a id="workButton" href="#">Work</a></li>
+        <li><a id="contactButton" href="#">Contact</a></li>
+        <li><a id="logoutButton" href="#">Logout</a></li>
+      </ul>
+    </nav>   </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</div>
+
+  <footer>
+    <p>&copy; 2023 Roberta Cavallaro. All rights reserved.</p>
+  </footer>
+  <script>
+
+    // Logout function
+    function logoutButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'index.html'; // Redirect to the login page
+    }
+
+    // Add event listener to the logout button
+    const logoutButtonElement = document.getElementById('logoutButton');
+    logoutButtonElement.addEventListener('click', logoutButton);
+
+
+
+
+    
+      // HOME function
+      function homeButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'account.html'; // Redirect to the home page
+    }
+
+    // Add event listener to the home button
+    const homeButtonElement = document.getElementById('homeButton');
+    homeButtonElement.addEventListener('click', homeButton);
+
+
+
+
+
+    // WORK function
+    function workButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'work.html'; // Redirect to the work page
+    }
+
+    // Add event listener to the work button
+    const workButtonElement = document.getElementById('workButton');
+    workButtonElement.addEventListener('click', workButton);
+
+
+
+   // CONTACT function
+       function contactButton() {
+      sessionStorage.removeItem('auth');
+      window.location.href = 'contact.html'; // Redirect to the contact page
+    }
+
+    // Add event listener to the settings button
+    const contactButtonElement = document.getElementById('contactButton');
+    contactButtonElement.addEventListener('click', contactButton);
+
+
+
+    // dropdown button personal information function
+    function dropDown() {
+      var dropdownContent = document.getElementById("personalInfo");
+      if (dropdownContent.style.display === "none") {
+        dropdownContent.style.display = "block";
+      } else {
+        dropdownContent.style.display = "none";
+      }
+    } 
+     </script>
+</body>
+</html>

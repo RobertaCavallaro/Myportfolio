@@ -1,0 +1,14 @@
+h1 {
+  color: Blue;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1,
+p {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=main.css.map */

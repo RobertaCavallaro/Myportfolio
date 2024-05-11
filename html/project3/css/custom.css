@@ -1,0 +1,136 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: pink;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #ae10ce transparent;
+  border-width: 22px 24px 0;
+  bottom: -22px;
+  left: 85%;
+  margin-left: -24px;
+}
+
+.header {
+  background-color: pink;
+}
+
+.image {
+  width: 11em;
+  height: 7em;
+  float: right;
+}
+
+.bg-light h2 {
+  color: black;
+  text-align: -webkit-center;
+  border-style: dashed;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.forms {
+  width: 165px;
+  display: block;
+  border-block-start-style: none;
+}
+
+.card-body h1 {
+  background-color: black;
+  height: 70%;
+  text-align: center;
+  font-size: 30px;
+  background: #ae10ce;
+  transition: transform 1s cubic-bezier(0.42, 0, 0.47, -0.09);
+}
+
+.card-body {
+  position: relative;
+  background: linear-gradient(0deg, #002bff 5%, #ae10ce 66%);
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 48px;
+  box-shadow: 5px 5px 2px 0px #a3a3a3;
+  text-align: center;
+  height: 94px;
+  padding: 0px;
+}
+
+.card-body:hover .card-text {
+  background: linear-gradient(0deg, #002bff 5%, #ffff4d 66%);
+  font-style: italic;
+  -webkit-animation: myanimation 2s linear infinite;
+          animation: myanimation 2s linear infinite;
+  color: black;
+}
+
+@-webkit-keyframes myanimation {
+  0% {
+    opacity: 50%;
+  }
+  60% {
+    transform: translateY(60%);
+    opacity: 100%;
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    opacity: 50%;
+  }
+  60% {
+    transform: translateY(60%);
+    opacity: 100%;
+  }
+}
+.image_1 {
+  float: left;
+  shape-outside: ellipse();
+  -webkit-margin-end: 1em;
+          margin-inline-end: 1em;
+  min-width: 13em;
+  width: 15em;
+  height: 139px;
+  margin: 4em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: #ffffff 1 circle;
+  border-radius: 20%;
+}
+
+.music p {
+  padding: 50px;
+  padding-bottom: 40px;
+  border: dotted;
+  padding-top: 50px;
+  line-height: 1.75em;
+  shape-margin: 1em;
+}
+
+.music {
+  padding-bottom: 200px;
+  margin-left: 10px;
+  font-stretch: condensed;
+}
+
+h5 {
+  padding: 6px;
+}
+
+h2 {
+  color: black;
+}/*# sourceMappingURL=custom.css.map */
