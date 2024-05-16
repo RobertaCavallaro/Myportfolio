@@ -503,12 +503,12 @@
 /* Theme Red */
 .theme-red .badge-subhead {
   background-color: rgba(239, 56, 36, 0.15);
-  color: #ef24d9;
+  color: #b2009d;
 }
 
 .theme-red .filterable-button .btn.selected,
 .theme-red .filterable-button .btn:focus {
-  background-color:#ef24d9;
+  background-color:#b2009d;
   color: #fff;
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ef24d9;
 }

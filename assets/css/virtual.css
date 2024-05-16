@@ -83,9 +83,7 @@ body {
     font-weight: bold;
 }
 
-.fw-light {
-    font-family: "Great Vibes", cursive;
-}
+
 
 .fs-large {
     font-size: 21px;
@@ -1125,7 +1123,7 @@ a:hover, a:active {
 }
 
 .theme-red .fg-theme {
-    color:#ef24d9 !important;
+    color:#7c006e !important;
     font-weight: bold;
 }
 
